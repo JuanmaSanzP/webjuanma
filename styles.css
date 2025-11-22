@@ -27,19 +27,16 @@ body{
 }
 
 .hero{
-  padding:28px;
+  padding:18px 22px;
   background:transparent;
   text-align:left;
 }
-.name{
-  margin:0;
-  font-size:1.9rem;
-  letter-spacing: -0.02em;
-}
-.role{
-  margin:6px 0 0 0;
-  color:var(--muted);
-}
+.hero-inner{display:flex;gap:16px;align-items:center}
+.photo-wrap{flex:0 0 auto}
+.photo{width:96px;height:96px;object-fit:cover;border-radius:999px;border:4px solid rgba(255,255,255,0.7);box-shadow:0 6px 18px rgba(15,23,42,0.08)}
+.name{margin:0;font-size:1.7rem;letter-spacing:-0.02em}
+.role{margin:6px 0 4px 0;color:var(--muted)}
+.contact-line{margin:4px 0 0 0;color:var(--muted);font-size:0.95rem}
 
 .card{
   background:var(--card);
@@ -61,5 +58,7 @@ a:hover{text-decoration:underline}
 
 @media (max-width:640px){
   .container{padding:0 6px}
-  .name{font-size:1.5rem}
+  .hero-inner{flex-direction:row;gap:12px}
+  .photo{width:72px;height:72px}
+  .name{font-size:1.4rem}
 }
